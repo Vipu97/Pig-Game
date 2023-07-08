@@ -228,7 +228,7 @@ main {
   }
   main{
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     width: 95%;
   }
   .btn--roll{
@@ -252,6 +252,9 @@ main {
   .btn--new{
     position: absolute;
     top:10px;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    padding: 5px;
   }
   .dice{
     position: absolute;
