@@ -1,5 +1,5 @@
 # Pig-Game
-Simple Dice Game created using Javascipt(Not responsive)
+Simple Dice Game created using Javascipt.
 
 Rules:
 1. A player can roll dice continuously until it gets 1 or it Hold the score.
