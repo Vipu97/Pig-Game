@@ -25,7 +25,7 @@ body {
 /* LAYOUT */
 main {
   position: relative;
-  width: 100rem;
+  width: 70vw;
   height: 60rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
@@ -44,7 +44,13 @@ main {
   align-items: center;
   transition: all 0.75s;
 }
-
+.name-score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  margin-top: 2rem;
+}
 /* ELEMENTS */
 .name {
   position: relative;
@@ -164,4 +170,104 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+@media (max-width:1060px){
+  main{
+    width:85vw;
+  }
+}
+@media (max-width:900px){
+  .name{
+    font-size: 2.7rem;
+  }
+  .btn{
+    padding: 0.3rem 1.7rem;
+  }
+  .current-label{
+    font-size: 1.4rem;
+  }
+  .dice{
+    height: 7rem;
+  }
+  .player--0{
+    padding-left: 4rem;
+  }
+  .player--1{
+    padding-right: 4rem;
+  }
+  .current{
+    padding: 2.6rem;
+    width: 75%;
+  }
+  .score{
+    margin-bottom: 120px;
+  }
+  .btn--roll {
+    top: 33rem;
+  }
+  .btn--hold {
+    top: 40rem;
+  }
+  .name-score{
+    height: 100px;
+  }
+}
+
+@media (max-width:630px){
+  .player{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .name-score{
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  main{
+    flex-direction: column;
+    height: 90vh;
+    width: 95%;
+  }
+  .btn--roll{
+    width: 80px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding:0.7rem;
+    position: absolute;
+    left: 15%;
+    top: 45%;
+  }
+  .btn--hold{
+    position:absolute;
+    top:45%;
+    left:85%;
+    font-size: 1.5rem;
+    padding:0.7rem;
+    border-radius: 20px;
+    width: 70px;
+  }
+  .btn--new{
+    position: absolute;
+    top:10px;
+  }
+  .dice{
+    position: absolute;
+    top:45%;
+  }
+  .current{
+    width: 15rem;
+  }
+  .score{
+    font-size: 6rem;
+  }
+  .current{
+    width:110px;
+    padding: 2rem;
+  }
+  .name{
+    margin-bottom: 0rem;
+  }
 }
